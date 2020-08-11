@@ -1,0 +1,60 @@
+:root { /* Serve para podermos criar variáveis */
+    /* Variáveis */
+    --color-background: #F0F0F7; 
+    --color-primary-lighter: #9871F5;
+    --color-primary-light: #916BEA;
+    --color-primary: #8257E5;
+    --color-primary-dark: #774DD6;
+    --color-primary-darker: #6842c2;
+    --color-secondary: #04D361;
+    --color-secondary-dark: #04BF58;
+    --color-title-in-primary: #FFFFFF;
+    --color-text-in-primary: #D4C2FF;
+    --color-text-title: #32264D;
+    --color-text-complement: #9C98A6;
+    --color-text-base: #6A6180;
+    --color-line-in-white: #E6E6F0;
+    --color-input-background: #F8F8FC;
+    --color-button-text: #FFFFFF;
+    --color-box-base: #FFFFFF;
+    --color-box-footer: #FAFAFC;
+    --color-small-info: #C1BCCC;
+    /* Tamanho da fonte | Padrão: 16px(grandeza própria) = 100%(relativo ao seu superior) = 1rem(relativo ao root) */
+    font-size: 60%; /* Controle das medidas rem */ 
+}
+
+*/* Todos os elementos */ {
+    margin: 0; /* Margem externa */
+    padding: 0; /* Margem interna/Preenchimento interno */
+    box-sizing: border-box; /* Medida da caixa: Margem de caixa */
+}
+
+html, body {
+    height: 100vh; /* vh = viewport height (altura da visão), a partir da visão do usuário do site, esse espaço será dividido em x partes */
+}
+
+body {
+    background-color: var(--color-background);
+    display: flex; /* Faz com que a exibição dos elementos da página seja flexível */
+    align-items: center;/* Alinha verticalmente os conteúdos da página | Só pode ser usado junto ao display */
+    justify-content: center; /* Alinha horizontalmente os conteúdos da página | Só pode ser usado junto ao display */
+}   
+
+body, input, button, textarea {
+    font-weight: 500;/* Peso da fonte: Quanto maior o número, mais grossa a letra*/
+    font-family: Poppings; /* Estilo da letra */
+    font-size: 1.6rem; /* Tamanho da letra: Quanto maior o número, maior a letra (rem referencia ao root)*/  
+    color: var(--color-text-base);
+}
+
+#container {
+    width: 90vw;/* vw = viewport width (largura da visão) */
+    max-width: 700px;/* Largura máxima */
+}
+
+@media(min-width: 700px){
+    :root {
+        font-size: 62.5%;
+    }
+}
+ 
